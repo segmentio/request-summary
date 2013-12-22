@@ -1,6 +1,6 @@
 # request-summary
 
-  Return a request summary.
+  Summarizes an [express](/visionmedia/express) request.
 
 ## Example
 
