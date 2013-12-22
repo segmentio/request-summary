@@ -1,6 +1,6 @@
 # request-summary
 
-  Summarizes an [express](https://github.com/visionmedia/express) request.
+  Summarize an [express](https://github.com/visionmedia/express) request.
 
 ## Example
 
