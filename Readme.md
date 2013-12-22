@@ -19,7 +19,7 @@ app.get(function (req, res, next) {
 
 ### summary(req, res)
     
-    Return an object summarizing a `req`.
+  Return an object summarizing a `req`.
 
 ## License
 
