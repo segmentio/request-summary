@@ -1,22 +1,37 @@
 # request-summary
 
-    Return a request summary.
+  Return a request summary.
 
 ## Example
 
 ```js
-var Summary = require('request-summary');
+var summary = require('request-summary');
 
 var app = express();
 app.get(function (req, res, next) {
-    var summary = Summary(req, res);
-    console.log('Bytes received: ' + summary.requestSize);
+    var request = summary(req, res);
+    console.log('Bytes received: ' + request.size);
     next();
 });
 ```
 
 ## API
 
-### .summary(req, res)
+### summary(req, res)
     
-    Return an object summarizing a request.
+    Return an object summarizing a `req`.
+
+## License
+
+```
+WWWWWW||WWWWWW
+ W W W||W W W
+      ||
+    ( OO )__________
+     /  |           \
+    /o o|    MIT     \
+    \___/||_||__||_|| *
+         || ||  || ||
+        _||_|| _||_||
+       (__|__|(__|__|
+```

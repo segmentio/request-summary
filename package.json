@@ -1,9 +1,6 @@
 {
-  "name": "s-request-summary",
+  "name": "request-summary",
   "version": "1.0.0",
-  "publishConfig": {
-    "registry": "https://registry.segment.io"
-  },
   "dependencies": {
     "bytes": "0.2.1"
   }

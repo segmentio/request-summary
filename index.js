@@ -1,20 +1,17 @@
 
 var bytes = require('bytes');
 
-
 /**
  * Expose `summary`.
  */
 
 exports = module.exports = summary;
 
-
 /**
  * Define tokens container.
  */
 
 var tokens = exports.tokens = {};
-
 
 /**
  * Return a request summary.
@@ -33,7 +30,6 @@ function summary (req, res) {
   return result;
 }
 
-
 /**
  * Define a token function with the given `name`,
  * and callback `fn(req, res)`.
@@ -49,7 +45,6 @@ exports.token = function(name, fn) {
   return this;
 };
 
-
 /**
  * request url
  */
@@ -57,7 +52,6 @@ exports.token = function(name, fn) {
 exports.token('url', function (req) {
   return req.originalUrl || req.url;
 });
-
 
 /**
  * request method
@@ -67,7 +61,6 @@ exports.token('method', function (req) {
   return req.method;
 });
 
-
 /**
  * UTC date
  */
@@ -76,7 +69,6 @@ exports.token('date', function () {
   return new Date();
 });
 
-
 /**
  * normalized referrer
  */
@@ -84,7 +76,6 @@ exports.token('date', function () {
 exports.token('referrer', function (req) {
   return req.headers.referer || req.headers.referrer;
 });
-
 
 /**
  * remote address
@@ -98,7 +89,6 @@ exports.token('remoteAddress', function (req) {
   return sock.remoteAddress;
 });
 
-
 /**
  * HTTP version
  */
@@ -106,7 +96,6 @@ exports.token('remoteAddress', function (req) {
 exports.token('httpVersion', function (req) {
   return req.httpVersionMajor + '.' + req.httpVersionMinor;
 });
-
 
 /**
  * UA string
@@ -116,7 +105,6 @@ exports.token('userAgent', function (req) {
   return req.get('User-Agent');
 });
 
-
 /**
  * Request ID
  */
@@ -124,7 +112,6 @@ exports.token('userAgent', function (req) {
 exports.token('id', function (req, res) {
   return req._id;
 });
-
 
 /**
  * Request Content Received
