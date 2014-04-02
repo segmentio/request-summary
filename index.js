@@ -1,6 +1,4 @@
 
-var bytes = require('bytes');
-
 /**
  * Expose `summary`.
  */
