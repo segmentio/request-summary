@@ -118,6 +118,6 @@ exports.token('id', function (req, res) {
  */
 
 exports.token('size', function (req, res) {
-  return parseInt(req._received, 10);
+  return req.socket ? req.socket.bytesRead : parseInt(req._received, 10);
 });
 
