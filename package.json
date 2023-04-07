@@ -2,6 +2,6 @@
   "name": "request-summary",
   "version": "1.0.0",
   "dependencies": {
-    "bytes": "0.2.1"
+    "bytes": "0.3.0"
   }
 }
